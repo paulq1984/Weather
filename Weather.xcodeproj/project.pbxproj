@@ -11,6 +11,10 @@
 		BDCB411C291841210004AEF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB411B291841210004AEF5 /* ContentView.swift */; };
 		BDCB411E291841240004AEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCB411D291841240004AEF5 /* Assets.xcassets */; };
 		BDCB4121291841240004AEF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCB4120291841240004AEF5 /* Preview Assets.xcassets */; };
+		BDCB41282918417E0004AEF5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB41272918417E0004AEF5 /* APIService.swift */; };
+		BDCB412A2918419F0004AEF5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB41292918419F0004AEF5 /* Forecast.swift */; };
+		BDCB412C29184D590004AEF5 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */; };
+		BDCB412E291851810004AEF5 /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BDCB411B291841210004AEF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDCB411D291841240004AEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDCB4120291841240004AEF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDCB41272918417E0004AEF5 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BDCB41292918419F0004AEF5 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +61,12 @@
 			children = (
 				BDCB4119291841210004AEF5 /* WeatherApp.swift */,
 				BDCB411B291841210004AEF5 /* ContentView.swift */,
+				BDCB41272918417E0004AEF5 /* APIService.swift */,
 				BDCB411D291841240004AEF5 /* Assets.xcassets */,
 				BDCB411F291841240004AEF5 /* Preview Content */,
+				BDCB41292918419F0004AEF5 /* Forecast.swift */,
+				BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */,
+				BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCB412A2918419F0004AEF5 /* Forecast.swift in Sources */,
 				BDCB411C291841210004AEF5 /* ContentView.swift in Sources */,
+				BDCB41282918417E0004AEF5 /* APIService.swift in Sources */,
 				BDCB411A291841210004AEF5 /* WeatherApp.swift in Sources */,
+				BDCB412C29184D590004AEF5 /* ForecastViewModel.swift in Sources */,
+				BDCB412E291851810004AEF5 /* ForecastListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
