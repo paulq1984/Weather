@@ -15,6 +15,10 @@
 		BDCB412A2918419F0004AEF5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB41292918419F0004AEF5 /* Forecast.swift */; };
 		BDCB412C29184D590004AEF5 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */; };
 		BDCB412E291851810004AEF5 /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */; };
+		BDCB4131291861B80004AEF5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BDCB4130291861B80004AEF5 /* SDWebImage */; };
+		BDCB4133291861B80004AEF5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BDCB4132291861B80004AEF5 /* SDWebImageMapKit */; };
+		BDCB4136291862D40004AEF5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BDCB4135291862D40004AEF5 /* SDWebImageSwiftUI */; };
+		BDCB413829193E600004AEF5 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB413729193E600004AEF5 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,7 @@
 		BDCB41292918419F0004AEF5 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
+		BDCB413729193E600004AEF5 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCB4136291862D40004AEF5 /* SDWebImageSwiftUI in Frameworks */,
+				BDCB4133291861B80004AEF5 /* SDWebImageMapKit in Frameworks */,
+				BDCB4131291861B80004AEF5 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +75,7 @@
 				BDCB41292918419F0004AEF5 /* Forecast.swift */,
 				BDCB412B29184D590004AEF5 /* ForecastViewModel.swift */,
 				BDCB412D291851810004AEF5 /* ForecastListViewModel.swift */,
+				BDCB413729193E600004AEF5 /* UIApplication+Extension.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -95,6 +104,11 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				BDCB4130291861B80004AEF5 /* SDWebImage */,
+				BDCB4132291861B80004AEF5 /* SDWebImageMapKit */,
+				BDCB4135291862D40004AEF5 /* SDWebImageSwiftUI */,
+			);
 			productName = Weather;
 			productReference = BDCB4116291841210004AEF5 /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +137,10 @@
 				Base,
 			);
 			mainGroup = BDCB410D291841210004AEF5;
+			packageReferences = (
+				BDCB412F291861B80004AEF5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BDCB4134291862D40004AEF5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = BDCB4117291841210004AEF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +173,7 @@
 				BDCB411A291841210004AEF5 /* WeatherApp.swift in Sources */,
 				BDCB412C29184D590004AEF5 /* ForecastViewModel.swift in Sources */,
 				BDCB412E291851810004AEF5 /* ForecastListViewModel.swift in Sources */,
+				BDCB413829193E600004AEF5 /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +374,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDCB412F291861B80004AEF5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BDCB4134291862D40004AEF5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDCB4130291861B80004AEF5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCB412F291861B80004AEF5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BDCB4132291861B80004AEF5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCB412F291861B80004AEF5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		BDCB4135291862D40004AEF5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCB4134291862D40004AEF5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDCB410E291841210004AEF5 /* Project object */;
 }
